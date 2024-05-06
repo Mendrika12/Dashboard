@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tableau de bord</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+     <!-- Bouton menu burger -->
+     <div class="menu-burger" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <!-- Avatar en haut à droite -->
+    <div class="avatar-container">
+        <img src="avatars/1.png" alt="Avatar" class="avatar">
+    </div>
+
+    <h1>Project Name</h1>
+
+    <div class="row">
+        <div class="col-md-6 case case-noir">
+            <h2>Activity Title</h2>
+            <p>A bit description about the activities</p>
+            <canvas id="chart1"></canvas>
+            <img src="images/im1.png" alt="Image 1" class="case-image">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 case case-vert">
+            <h2>Activity Title</h2>
+            <p>A bit description about the activities</p>
+            <canvas id="chart2"></canvas>
+            <img src="images/im2.png" alt="Image 2" class="case-image">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 case case-bleu">
+            <h2>Activity Title</h2>
+            <p>A bit description about the activities</p>
+            <canvas id="chart3"></canvas>
+            <img src="images/im3.png" alt="Image 3" class="case-image">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2 case">
+            <!-- Ajoutez des icônes ici -->
+            <img src="icons/category-solid-24.png" alt="Icon 1" style="height: 1cm;">
+            <img src="icons/trending-up-regular-24.png" alt="Icon 2" style="height: 1cm;">
+            <img src="icons/bell-solid-24.png" alt="Icon 3" style="height: 1cm;">
+            <img src="icons/calendar-solid-24.png" alt="Icon 4" style="height: 1cm;">
+            <img src="icons/folder-solid-24.png" alt="Icon 5" style="height: 1cm;">
+        </div>
+    </div>
+    
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+
+  <script>
+    function toggleMenu() {
+        const menu = document.getElementById("navMenu");
+        menu.classList.toggle("active");
+    }
+</script>
+</body>
+</html>
